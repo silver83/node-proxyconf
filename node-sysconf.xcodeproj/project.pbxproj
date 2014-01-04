@@ -6,8 +6,13 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E9D598DC183C09F300321F54 /* SystemConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9D598DB183C09F300321F54 /* SystemConfig.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E9D598D4183C09B600321F54 /* libnode-sysconf.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libnode-sysconf.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D598DB183C09F300321F54 /* SystemConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SystemConfig.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +29,7 @@
 		E9D598CB183C09B600321F54 = {
 			isa = PBXGroup;
 			children = (
+				E9D598DB183C09F300321F54 /* SystemConfig.cpp */,
 				E9D598D5183C09B600321F54 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +103,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9D598DC183C09F300321F54 /* SystemConfig.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
