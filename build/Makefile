@@ -334,8 +334,8 @@ ifeq ($(strip $(foreach prefix,$(NO_LOAD),\
 endif
 
 quiet_cmd_regen_makefile = ACTION Regenerating $@
-cmd_regen_makefile = cd $(srcdir); /usr/local/share/npm/lib/node_modules/node-gyp/gyp/gyp_main.py -fmake --ignore-environment "--toplevel-dir=." -I/Users/yoni/Code/projects/node-sysconf/node-sysconf/build/config.gypi -I/usr/local/share/npm/lib/node_modules/node-gyp/addon.gypi -I/Users/yoni/.node-gyp/0.10.24/common.gypi "--depth=." "-Goutput_dir=." "--generator-output=build" "-Dlibrary=shared_library" "-Dvisibility=default" "-Dnode_root_dir=/Users/yoni/.node-gyp/0.10.24" "-Dmodule_root_dir=/Users/yoni/Code/projects/node-sysconf/node-sysconf" binding.gyp
-Makefile: $(srcdir)/../../../../.node-gyp/0.10.24/common.gypi $(srcdir)/../../../../../../usr/local/share/npm/lib/node_modules/node-gyp/addon.gypi $(srcdir)/build/config.gypi $(srcdir)/binding.gyp
+cmd_regen_makefile = cd $(srcdir); /usr/local/Cellar/node/0.10.4/lib/node_modules/npm/node_modules/node-gyp/gyp/gyp_main.py -fmake --ignore-environment "--toplevel-dir=." -I/Users/yoni/Code/src/node-sysconf/build/config.gypi -I/usr/local/Cellar/node/0.10.4/lib/node_modules/npm/node_modules/node-gyp/addon.gypi -I/Users/yoni/.node-gyp/0.10.24/common.gypi "--depth=." "-Goutput_dir=." "--generator-output=build" "-Dlibrary=shared_library" "-Dvisibility=default" "-Dnode_root_dir=/Users/yoni/.node-gyp/0.10.24" "-Dmodule_root_dir=/Users/yoni/Code/src/node-sysconf" binding.gyp
+Makefile: $(srcdir)/../../../../../usr/local/Cellar/node/0.10.4/lib/node_modules/npm/node_modules/node-gyp/addon.gypi $(srcdir)/build/config.gypi $(srcdir)/binding.gyp $(srcdir)/../../../.node-gyp/0.10.24/common.gypi
 	$(call do_cmd,regen_makefile)
 
 # "all" is a concatenation of the "all" targets from all the included

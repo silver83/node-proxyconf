@@ -56,12 +56,13 @@ uint32_t ProxySetConfig(const char* ip, uint32_t port, uint32_t enabled) {
   NSLog(CFSTR("SCPreferencesApplyChanges : %d"), result);
 
   /* clean up after yourself... */
+  // sometimes error out here... need to investigate
   CFRelease(prefs);
-  CFRelease(primaryServiceId);
-  CFRelease(primaryService);
-  CFRelease(proxyProtoRef);
-  CFRelease(proxyConf);
-  CFRelease(newProxyConf);
+  // CFRelease(primaryServiceId);
+  // CFRelease(primaryService);
+  // CFRelease(proxyProtoRef);
+  // CFRelease(proxyConf);
+  // CFRelease(newProxyConf);
 
   AuthorizationFree(auth, kAuthorizationFlagDefaults);
 
